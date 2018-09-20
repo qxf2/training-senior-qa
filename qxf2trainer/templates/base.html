@@ -3,6 +3,14 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38578610-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-38578610-6');
+    </script>
     <meta charset="utf-8">
     <title>{% block title %}Qxf2 Trainer{% endblock %}</title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
@@ -10,9 +18,18 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <style>
-        .thin-text{font-family: Abel,Arial,sans-serif}
-        .white-text{;color: #ffffff;}
-        .top-space{margin-top: 25px;}
+        .thin-text {
+            font-family: Abel, Arial, sans-serif
+        }
+
+        .white-text {
+            ;
+            color: #ffffff;
+        }
+
+        .top-space {
+            margin-top: 25px;
+        }
     </style>
 </head>
 
@@ -21,7 +38,7 @@
         <!-- Links -->
         <img src="https://qxf2.com/assets/img/qxf2_trainer_logo_1.png" class="navbar-brand" width="60" height="60">
         <ul class="navbar-nav">
-                <li class="navbar-brand">
+            <li class="navbar-brand">
                 <h4 class="thin-text white-text">Qxf2 Trainer</h4>
             </li>
             <li class="nav-item">
@@ -39,7 +56,7 @@
             </div>
         </div>
     </div>
-    
+
 </body>
 
 </html>
