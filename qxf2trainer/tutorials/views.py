@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return HttpResponse("This is the first page.")
+    return HttpResponse("This is the first page.<br><a href=\"what-to-expect\">What to expect</a><br><a href=\"welcome\">Welcome</a>")
 
 def welcome(request):
     return HttpResponse("This is the welcome screen<br><a href=\"what-to-expect\">What to expect</a>")
