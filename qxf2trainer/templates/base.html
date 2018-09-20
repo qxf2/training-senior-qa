@@ -5,11 +5,41 @@
 <head>
     <meta charset="utf-8">
     <title>{% block title %}Qxf2 Trainer{% endblock %}</title>
-</head> 
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        .thin-text{font-family: Abel,Arial,sans-serif}
+        .white-text{;color: #ffffff;}
+        .top-space{margin-top: 25px;}
+    </style>
+</head>
+
 <body>
-<main>
-    {% block content %} {% endblock %}
-</main>
+    <nav class="navbar navbar-expand-sm bg-warning sticky-top">
+        <!-- Links -->
+        <img src="https://qxf2.com/assets/img/qxf2_trainer_logo_1.png" class="navbar-brand" width="60" height="60">
+        <ul class="navbar-nav">
+                <li class="navbar-brand">
+                <h4 class="thin-text white-text">Qxf2 Trainer</h4>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tutorials/">Tutorials</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/accounts/logout">Logout</a>
+            </li>
+        </ul>
+    </nav>
+    <div class=container>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 top-space">
+                {% block content %} {% endblock %}
+            </div>
+        </div>
+    </div>
+    
 </body>
 
 </html>
