@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block title %}Qxf2 Trainer: Before you begin{% endblock %}
+
+{% block content %}
+
+<p class="text-justify">We expect this exercise to take you somewhere between 15-minutes to 2 hours. If you take more
+    than two hours, please post what you tried along wtih error messages to our slack channel.</p>
+
+<p class="text-justify">Python has two versions (3.x and 2.7.x) and multiple distributions (official, IronPython,
+    Conda, etc.). Python 3.x is the latest and ideally what we would all use. We'd love to recommend you use Python
+    3.x. However, for this tutorial, you are going to install the latest official Python 2.7 version from the official
+    site. We are doing this because we find many QA departments have not yet migrated to Python 3.x and we want these
+    tutorials to be as close to your real work as possible.</p>
+
+<p class="text-justify">In keeping with our attempt to help you think in different ways, we have listed three
+    approaches that work. There is no shame or pride in choosing anyone of them. Just choose the method you are
+    comfortable with and proceed.</p>
+<p>&nbsp;</p>
+<h3 class="thin-text">
+    <img src="https://qxf2.com/assets/img/approach_icon.png" width="60" height="60">
+    Approach 1: Try it out yourself
+</h3>
+<ol>
+    <li>We'd like to promote independent thinking and problem solving. So if you feel ready, try to install Python
+        without referring to any documentation, go for it!</li>
+</ol>
+<p>&nbsp;</p>
+<h3 class="thin-text">
+    <img src="https://qxf2.com/assets/img/approach_icon.png" width="60" height="60">
+    Approach 2: Google for instructions
+</h3>
+<ol>
+    <li>Google for Python 2.7 install <your operating system name>
+    </li>
+    <li>Follow the instructions</li>
+</ol>
+<p>&nbsp;</p>
+<h3 class="thin-text">
+    <img src="https://qxf2.com/assets/img/approach_icon.png" width="60" height="60">
+    Approach 3: follow instructions
+</h3>
+<ol>
+    <li>Visit <a href="https://www.python.org/downloads/">https://www.python.org/downloads/ </a> </li> <li>Ignore the
+            3.x versions and click on the latest 2.7.x release</li>
+    <li>On the release page, choose Python 2.7 release for your operating system </li>
+    <li>Download the executable and follow the steps</li>
+</ol>
+<p>&nbsp;</p>
+<h3 class="thin-text">
+    <img src="https://qxf2.com/assets/img/exercises_icon.png" width="60" height="60">
+    Exercise
+</h3>
+<p class="text-justify">Once you are done, add the Python executable to your path environment variable. Hint: Google for 'add Python to path environment variable <your os name>'.
+</p>
+<p>&nbsp;</p>
+<h3 class="thin-text">
+    <img src="https://qxf2.com/assets/img/verify_dummy_image.png" width="60" height="60">
+    Verify your setup
+</h3>
+
+<p class="text-justify">After you are done with the exercise listed above, it is time to verify your Python installation. It is a good habit
+    to take small steps and verify them immediately. This will help you avoid getting stuck later on. To verify your
+    setup, pull up your terminal prompt and type python --version. You should see the version you installed listed.
+</p>
+
+<p>&nbsp;</p>
+<form action="did-you-complete">
+    <button type="submit" class="btn btn-danger form-actions">Let's move on</button>
+</form>
+<p class="top-space">&nbsp;</p>
+{% endblock %}
