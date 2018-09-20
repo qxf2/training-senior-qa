@@ -120,4 +120,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 LOGIN_REDIRECT_URL = '../../tutorials/'
-LOGOUT_REDIRECT_URL = 'accounts/login'
+LOGOUT_REDIRECT_URL = 'login'
