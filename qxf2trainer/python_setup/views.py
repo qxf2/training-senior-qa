@@ -21,7 +21,8 @@ def install_python(request):
 
 @login_required
 def didyoucomplete(request):
-    return HttpResponse("<h3>Did you finish?</h3><input type=\"checkbox\" name=\"easy\" value=\"Easy\"> Yes, quite easily <br><input type=\"checkbox\" name=\"medium\" value=\"medium\"> Yes, but with some difficulty <br><input type=\"checkbox\" name=\"hard\" value=\"hard\"> No, I am stuck <br><br><h2>Take a moment</h2><p>Until you have the momentum of several small technical accomplishments, take a moment to figure out how you are feeling. How does it compare to how you felt before starting the task?</p><br><br><a href=\"once-you-complete\">Next</a>")
+    template = loader.get_template('python_setup/did-you-complete.html')
+    return HttpResponse(template.render())
 
 @login_required
 def onceyoucomplete(request):
