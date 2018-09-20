@@ -24,5 +24,5 @@ urlpatterns = [
     path('python-setup/', include('python_setup.urls')),
     path('', views.index, name='home'),
     path('admin/', admin.site.urls),
-    path('qxf2trainer/', include('django.contrib.auth.urls'))
+    path('accounts/', include('django.contrib.auth.urls'))
 ]

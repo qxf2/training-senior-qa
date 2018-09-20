@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return HttpResponse("Dummy login page to be replaced when our login screen is ready.<br><a href=\"tutorials/\">Log in</a>")
+    return HttpResponse("<h2>Welcome to the Qxf2 trainer!</h2><p>You are just a login away from learning some cool new tech!<br><a href=\"accounts/login\">Log in</a></p>")
