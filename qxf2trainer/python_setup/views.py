@@ -11,15 +11,8 @@ def beforeyoubegin(request):
 
 @login_required
 def whattoexpect(request):
-    return HttpResponse("<h2>What to expect</h2>\
-    <p>At the end of this mini-tutorial, you can expect to have setup Python on your machine.</p> \
-    <p>Most tutorials and training material expect things to go smoothly. Not us! We are experienced professional QA and we know that a lot can go wrong during setup. It's probably not your fault. So before we begin, here is what to expect as you go through the tutorial. \
-    <ol>\
-    <li>Beginners usually have trouble with setup. That's ok.</li>\
-    <li>Over time, you will develop a mental catalogue of problems that come with install and setup.</li>\
-    </ol>\
-    </p>\
-    <h3>If/When you hit an issue</h3>When you run into an issue, don't panic. Here is what you can try<ol><li>Take a minute to try and read through the error message. It's ok if seems like gibberish ... just make the attempt.</li><li>Try and identify the key line in the error</li><li>Google for the phrase 'python install <your OS name e.g.: windows> <key line in error>'</li><li>Try out the suggestions mentioned in the Google search results even if you don't fully understand them.</li><li>After you have tried your best, contact Qxf2 on our public Slack Channel</li></ol></p><br><a href=\"tutorial\">Next</a>")
+    template = loader.get_template('python_setup/what-to-expect.html')
+    return HttpResponse(template.render())
 
 @login_required
 def install_python(request):
