@@ -1,12 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
-
+from django.template import loader
 
 # Create your views here.
 @login_required
 def beforeyoubegin(request):
-    return HttpResponse("<h2>Before you begin</h2> <p>We would like to remind you of a few things. <ol><li>It is OK to run into issues during this step. Setup issues are a part of regular work.</li><li>It is OK to not know what you are doing. Things will come together later in the course.</li></ol></p><br><h2>Take a moment</h2><p>Until you have the momentum of several small technical accomplishments, take a moment to figure out how you are feeling. This exercise will help you combat some unrealistic defense mechanisms at a later date!</p><a href=\"what-to-expect\">Next</a>")
+    template = loader.get_template('python_setup/before-you-begin.html')
+    return HttpResponse(template.render())
 
 @login_required
 def whattoexpect(request):

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Qxf2 Trainer: Before you begin{% endblock %}
+
+{% block content %}
+
+    <h3 class="thin-text top-space">
+        <img src="https://qxf2.com/assets/img/before_you_begin_icon.png" width="60" height="60">
+        Before you begin
+    </h3>
+    <p>We would like to remind you of a few things:
+        <ol>
+            <li>It is OK to run into issues during this step. Setup issues are a part of regular work.</li>
+            <li>It is OK to not know what you are doing. Things will come together later in the course.</li>
+        </ol>
+    </p>
+    <p class="top-space">&nbsp;</p>
+    <h3 class="thin-text top-space"><img src="https://qxf2.com/assets/img/take_a_moment.png" width="60" height="60">
+        Take a moment
+    </h3>
+    <p>Until you have the momentum of several small technical accomplishments, take a moment to figure out how you are
+        feeling. This exercise will help you combat some unrealistic defense mechanisms at a later date!</p>
+    <p class="top-space">&nbsp;</p>
+    <form action="what-to-expect">
+        <button type="submit" class="btn btn-danger form-actions">Noted. I'm ready to proceed!</button>
+    </form>
+{% endblock %}
