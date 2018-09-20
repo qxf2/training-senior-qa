@@ -21,6 +21,9 @@
             background: linear-gradient(to bottom, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         }
         .container{background:#fff; border-radius: 10px; box-shadow:15px 20px 0px rgba(0,0,0,0.1);padding: 50px 30px;}
+        .form-actions{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -31,7 +34,7 @@
                     {% csrf_token %}
                     {{ form.as_p }}
                     <div class="form-actions">
-                        <button type="submit" class="btn btn-login center">Login</button>
+                        <button type="submit" class="btn btn-danger">Login</button>
                     </div>
                 </form>
             </div>
