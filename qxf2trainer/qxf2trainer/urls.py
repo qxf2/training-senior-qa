@@ -21,6 +21,7 @@ from django.views.generic.base import TemplateView
 urlpatterns = [
     path('tutorials/', include('tutorials.urls')),
     path('python-setup/', include('python_setup.urls')),
+    path('vscode-setup/', include('vscode_setup.urls')),
     path('', views.index, name='home'),
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls'))
