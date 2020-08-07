@@ -22,6 +22,8 @@ urlpatterns = [
     path('tutorials/', include('tutorials.urls')),
     path('python-setup/', include('python_setup.urls')),
     path('vscode-setup/', include('vscode_setup.urls')),
+    path('chrome-driver-setup/', include('chrome_driver_setup.urls')),
+    path('git-bash-setup/', include('git_bash_setup.urls')),
     path('', views.index, name='home'),
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls'))
