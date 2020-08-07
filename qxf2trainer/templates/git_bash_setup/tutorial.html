@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block title %}Qxf2 Trainer: Tutorial{% endblock %}
+
+{% block content %}
+
+<p class="text-justify">We expect this exercise to take you somewhere between 15-minutes to 1 hours. If you take more
+    than one hour, please post what you tried along wtih error messages to our skype channel.</p>
+
+<p class="text-justify">We will be using git bash quite a lot at Qxf2. Therefore, for this tutorial, you are going to
+    install the latest version from the official
+    site.</p>
+
+<p class="text-justify">In keeping with our attempt to help you think in different ways, we have listed three
+    approaches that work. There is no shame or pride in choosing anyone of them. Just choose the method you are
+    comfortable with and proceed.</p>
+<p>&nbsp;</p>
+<h3 class="thin-text">
+    <img src="https://qxf2.com/assets/img/approach_icon.png" width="60" height="60">
+    Approach 1: Try it out yourself
+</h3>
+<ol>
+    <li>We'd like to promote independent thinking and problem solving. So if you feel ready, try to install Git Bash
+        without referring to any documentation, go for it!</li>
+</ol>
+<p>&nbsp;</p>
+<h3 class="thin-text">
+    <img src="https://qxf2.com/assets/img/approach_icon.png" width="60" height="60">
+    Approach 2: Google for instructions
+</h3>
+<ol>
+    <li>Google for Git Bash install 'your operating system name'
+    </li>
+    <li>Follow the instructions</li>
+</ol>
+<p>&nbsp;</p>
+<h3 class="thin-text">
+    <img src="https://qxf2.com/assets/img/approach_icon.png" width="60" height="60">
+    Approach 3: follow instructions
+</h3>
+<ol>
+    <li>Visit <a href="https://gitforwindows.org/index.html">https://gitforwindows.org/index.html </a> </li>
+    <li>Click on the Downloads</li>
+    <li>On the release page, choose latest release for your operating system </li>
+    <li>Download the executable and follow the steps</li>
+    <li>Once installation completes, Press windows key and search for Git bash and open it</li>
+
+
+</ol>
+<p>&nbsp;</p>
+<h3 class="thin-text">
+    <img src="https://qxf2.com/assets/img/exercises_icon.png" width="60" height="60">
+    Exercise
+</h3>
+<p class="text-justify">Run the below commands to configure your git, so that these details would get associated with
+    any commits you create in future
+    . git config --global user.name "Your name"
+    . git config --global user.email "Your qxf2 emaild id"
+</p>
+<p>&nbsp;</p>
+<h3 class="thin-text">
+    <img src="https://qxf2.com/assets/img/verify_dummy_image.png" width="60" height="60">
+    Verify your setup
+</h3>
+
+<p class="text-justify">After you are done with the exercise listed above, it is time to verify your Git Bash
+    installation. It is a good habit
+    to take small steps and verify them immediately. This will help you avoid getting stuck later on. To verify your
+    setup, pull up your terminal prompt and run the command git --version. You should see the version you installed
+    listed.
+</p>
+
+<p>&nbsp;</p>
+<form action="did-you-complete">
+    <button type="submit" class="btn btn-danger form-actions">Let's move on</button>
+</form>
+<p class="top-space">&nbsp;</p>
+{% endblock %}

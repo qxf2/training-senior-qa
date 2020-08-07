@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Qxf2 Trainer: Once you complete{% endblock %}
+
+{% block content %}
+
+<p class="top-space text-justify">Anytime you score a win, take a moment to reflect on what happened. Think about what
+    you did, the problems you faced and challenge yourself to try and verbalize what you did (its hard!).</p>
+
+<h3 class="top-space">
+    <img src="https://qxf2.com/assets/img/after_you_finish.png" class="rounded-circle" width="60" height="60">
+    What you learnt
+</h3>
+<p class="top-space text-justify">
+    Unknown to you, we exercised several good habits. Here are some:
+<ol>
+    <li><strong>Tech:</strong> Installing Git bash </li>
+    <li><strong>Mindset:</strong> Technical issues arise everywhere and you have a lot of online help</li>
+    <li><strong>Habits:</strong> Paying attention to what you feel before starting a new task and after completing a new
+        task, retrospecting</li>
+</ol>
+</p>
+
+<p class="top-space">&nbsp;</p>
+<form action="/tutorials">
+    <button type="submit" class="btn btn-danger form-actions">Game on! Let's go to the next tutorial.</button>
+</form>
+{% endblock %}
