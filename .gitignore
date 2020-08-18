@@ -107,3 +107,7 @@ venv.bak/
 hackathon
 training-senior-qa
 
+# django migrations 
+**/migrations/**
+!**/migrations
+!**/migrations/__init__.py
