@@ -25,7 +25,7 @@ SECRET_KEY = 'f!7^_+4%$qo9hj0x=7%-j=jz9synf%1hit)glgt7s#q3n%+$5l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['qxf2trainer.pythonanywhere.com','localhost']
+ALLOWED_HOSTS = ['qxf2trainer.pythonanywhere.com', 'localhost']
 
 
 # Application definition
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'chrome_driver_setup'
+
 ]
 
 MIDDLEWARE = [

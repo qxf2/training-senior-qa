@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Qxf2 Trainer: Did you finish?{% endblock %}
+
+{% block content %}
+<form action="once-you-complete">
+    <h3 class="thin-text">
+        <img src="https://qxf2.com/assets/img/did_you_finish.png" width="60" height="60">
+        Did you finish?
+    </h3>
+
+    <div class="radio top-space">
+        <label><input type="radio" name="optradio" value="Yes,Easy" checked> Yes, quite easily </label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="optradio" value="Yes,difficulty"> Yes, but with some difficulty </label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="optradio" value="No,Stuck"> No, I am stuck </label>
+    </div>
+
+    <p class="top-space">&nbsp;</p>
+    <h3 class="thin-text">
+        <img src="https://qxf2.com/assets/img/take_a_moment.png" width="60" height="60">
+        Take a moment
+    </h3>
+    <p class="text-justify">Until you have the momentum of several small technical accomplishments, take a moment to
+        figure out how you are feeling. How does it compare to how you felt before starting the task?
+    </p>
+    <p class="top-space">&nbsp;</p>
+
+    <button type="submit" class="btn btn-danger form-actions">What remains? I thought we were done!</button>
+</form>
+
+{% endblock %}
